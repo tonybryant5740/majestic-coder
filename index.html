@@ -1,12 +1,100 @@
+<!-- ...existing code... -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emmanuel</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./sytle.css">
 </head>
 <body>
-    <script src="main.js"></script>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">Emmanuel</div>
+            <nav class="nav">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+                <a class="btn" href="#get-started">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1>Build something great.</h1>
+                    <p>Simple, fast, and modern landing page template to showcase your product or service.</p>
+                    <p class="cta-row">
+                        <a class="btn btn-primary" id="get-started" href="#pricing">Start Free</a>
+                        <a class="btn btn-ghost" href="#features">Learn More</a>
+                    </p>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="mock-browser">Your product screenshot</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features container">
+            <h2 class="sr-only">Features</h2>
+            <div class="feature-grid">
+                <article class="feature">
+                    <h3>Fast</h3>
+                    <p>Optimized for speed and clarity so users can focus on what matters.</p>
+                </article>
+                <article class="feature">
+                    <h3>Responsive</h3>
+                    <p>Looks great on phones, tablets, and desktops out of the box.</p>
+                </article>
+                <article class="feature">
+                    <h3>Customizable</h3>
+                    <p>Easy to modify styles and structure to match your brand.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing container">
+            <h2>Pricing</h2>
+            <div class="pricing-grid">
+                <div class="plan">
+                    <h4>Free</h4>
+                    <p class="price">$0<span>/mo</span></p>
+                    <p>Basic features to get started.</p>
+                    <a class="btn" href="#get-started">Choose</a>
+                </div>
+                <div class="plan recommended">
+                    <h4>Pro</h4>
+                    <p class="price">$9<span>/mo</span></p>
+                    <p>Everything you need for growing projects.</p>
+                    <a class="btn btn-primary" href="#get-started">Choose</a>
+                </div>
+                <div class="plan">
+                    <h4>Enterprise</h4>
+                    <p class="price">Custom</p>
+                    <p>Contact us for large-scale needs.</p>
+                    <a class="btn" href="#contact">Contact</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact container">
+            <h2>Contact</h2>
+            <p>Questions? Email <a href="mailto:hello@example.com">hello@example.com</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Emmanuel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // small script to set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
+<!-- ...existing code... -->
